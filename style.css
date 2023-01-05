@@ -15,7 +15,9 @@
     background-color: aqua;
     height: 100vh;
 }
-
-.header {
-
-}
+header {
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 7fr 1fr 1fr 1fr;
+  }
