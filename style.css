@@ -1,3 +1,10 @@
+:root {
+    --cyanlight: #cffafe; 
+    --cyanmid: #06b6d4;
+    --cyan: #0e7490;
+    --cyandark: #164e63;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,12 +19,22 @@
 }
 
 .sidebar {
-    background-color: aqua;
+    background-color: var(--cyan);
     height: 100vh;
 }
-header {
-    background: white;
+
+.header {
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 7fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    position: relative;
+    height: 20vh;
+    background-color: var(--cyanlight);
+}
+
+  .account-top,
+  .account-bottom,
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
   }
