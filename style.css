@@ -21,6 +21,9 @@
 .sidebar {
     background-color: var(--cyan);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .header {
@@ -31,6 +34,11 @@
     background-color: var(--cyanlight);
 }
 
+.search-input {
+    display: flex;
+    min-width: 350px;
+}
+
   .account-top,
   .account-bottom,
   .action-buttons {
@@ -38,3 +46,18 @@
     gap: 8px;
     align-items: center;
   }
+
+  .profile-pic-small {
+    width: 75px;
+  }
+
+  .clickable:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.07);
+}
+
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-transform: scale(1.07);
+}
