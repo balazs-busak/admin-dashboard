@@ -14,8 +14,12 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    grid-template-areas:
+    'sidebar header'
+    'sidebar content';
 }
 
 .sidebar {
@@ -112,4 +116,21 @@ button:hover,
 .dashboard-title {
     cursor: pointer;
     -webkit-transform: scale(1.07);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.cards {
+    background-color: var(--cyanlight);
+    border-radius: 1em;
+    padding: 20px;
 }
