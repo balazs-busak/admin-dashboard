@@ -17,9 +17,7 @@
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
-    grid-template-areas:
-    'sidebar header'
-    'sidebar content';
+    background-color: var(--cyanlight);
 }
 
 .sidebar {
@@ -120,17 +118,24 @@ button:hover,
 
 .content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-columns: 75% 25%;
 }
 
 .cards {
-    background-color: var(--cyanlight);
-    border-radius: 1em;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 180px;
+    margin: 15px 0;
+    margin-left: 20px;
+    background-color: var(--cyanmid);
+    border-radius: 10px;
+    border-left: yellow solid 10px;
 }
