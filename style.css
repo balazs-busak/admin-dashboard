@@ -130,7 +130,7 @@ button:hover,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 80%;
     height: 180px;
     margin: 15px 0;
@@ -138,4 +138,46 @@ button:hover,
     background-color: var(--cyanmid);
     border-radius: 10px;
     border-left: yellow solid 10px;
+    padding-left: 25px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.mini-icons:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.07);
+}
+
+h6 {
+    font-size: 18px;
+    margin: 14px 0;
+}
+
+p {
+    color: white;
+}
+
+.side-cards {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.ann-container,
+.trend-container {
+    height: 80%;
+    width: 80%;
+    background-color: grey;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.side-card {
+    border-bottom: black solid;
 }
