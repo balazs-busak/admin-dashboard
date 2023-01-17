@@ -155,6 +155,11 @@ button:hover,
     -webkit-transform: scale(1.07);
 }
 
+h4 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 h6 {
     font-size: 18px;
     margin: 14px 0;
@@ -171,13 +176,30 @@ p {
 
 .ann-container,
 .trend-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     height: 80%;
     width: 80%;
     background-color: grey;
     margin-top: 20px;
     padding: 20px;
+    border-radius: 1em;
+}
+
+.ann-container {
+    gap: 25px;
 }
 
 .side-card {
-    border-bottom: black solid;
+    border-bottom: black solid 0.2px;
+}
+
+.side-card-trend {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.user-img {
+    width: 50px;
 }
